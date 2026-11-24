@@ -3,177 +3,309 @@
     <main>
         <div id="top"></div>
 
-        <section class="text-light jarallax relative">
-            <img src="{{ asset('landing/images/background/1.webp') }}" class="jarallax-img" alt="">
+        {{-- Hero & Pencarian Ketersediaan --}}
+        <section class="jarallax relative">
+            <img src="{{ asset('landing/images/background/1.webp') }}" class="jarallax-img" alt="Suasana penginapan">
 
             <div class="container relative z-2">
-                <div class="row g-4">
-                    <div class="spacer-double"></div>
-                    <div class="col-lg-6">
-                        <h1 class="split">Expert Vision Care and Trusted Eye Specialists</h1>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7 text-light">
+                        <div class="subtitle wow fadeInUp mb-3">Reservasi Langsung</div>
+                        <h1 class="split">Menginap Nyaman, Pesan Langsung Tanpa Perantara</h1>
                         <div class="spacer-single"></div>
-                        <div class="row g-4 align-items-center">
-                            <div class="col-lg-3 wow fadeInRight" data-wow-delay="1.6s">
-                                <a class="btn-main fx-slide" href="book-your-visit.html"><span>Book Now</span></a>
+                        <p class="mb-0 wow fadeInUp" data-wow-delay=".2s">Pilih kamar terbaik untuk perjalanan Anda dan
+                            dapatkan harga resmi langsung dari hotel. Proses pemesanan cepat, pembayaran aman, dan
+                            konfirmasi instan.</p>
+                        <div class="spacer-single"></div>
+                        <div class="row g-3 align-items-center">
+                            <div class="col-md-5 wow fadeInUp" data-wow-delay=".4s">
+                                <a class="btn-main fx-slide w-100" href="#cek-ketersediaan"><span>Cek
+                                        Ketersediaan</span></a>
                             </div>
-                            <div class="col-lg-7 wow fadeInRight" data-wow-delay="1.8s">
-                                <p class="mb-0">Comprehensive eye exams with modern tools that provide accurate results
-                                    while ensuring comfort and clarity for every patient.</p>
+                            <div class="col-md-5 wow fadeInUp" data-wow-delay=".5s">
+                                <a class="btn-main btn-line fx-slide w-100" href="#kamar"><span>Lihat
+                                        Kamar</span></a>
                             </div>
                         </div>
-                        <div class="spacer-double sm-hide"></div>
-                        <div class="spacer-double sm-hide"></div>
-                        <div class="spacer-double sm-hide"></div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="d-flex align-items-center justify-content-end">
-                            <div class="relative me-4">
-                                <img src="{{ asset('landing/images/testimonial/1.webp') }}"
-                                    class="w-50px circle ms-min-10 wow fadeInRight" data-wow-delay=".8s" alt="">
-                                <img src="{{ asset('landing/images/testimonial/2.webp') }}"
-                                    class="w-50px circle ms-min-10 wow fadeInRight" data-wow-delay="1s" alt="">
-                                <img src="{{ asset('landing/images/testimonial/3.webp') }}"
-                                    class="w-50px circle ms-min-10 wow fadeInRight" data-wow-delay="1.2s" alt="">
-                            </div>
-                            <div class="fw-600 fs-14 lh-1-5 wow fadeInRight" data-wow-delay="1.4s"><span
-                                    class="fs-16 fw-bold text-white">24k</span><br>Happy Patients</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="abs bottom-0 w-100 z-2 sm-hide">
-                <div class="col-lg-12">
-                    <div class="bg-blur p-40 m-4 rounded-1">
+                        <div class="spacer-single"></div>
                         <div class="row g-4">
-                            <div class="col-md-3 col-sm-6 text-center">
-                                <div class="de_count wow fadeInRight" data-wow-delay=".0s">
-                                    <h3 class="fs-40 mb-0"><span>65250</span>+</h3>
-                                    Eye Exams Performed
-                                </div>
+                            <div class="col-4 wow fadeInUp" data-wow-delay=".6s">
+                                <h3 class="fs-32 mb-0">50+</h3>
+                                <small>Kamar Siap Huni</small>
                             </div>
-                            <div class="col-md-3 col-sm-6 text-center">
-                                <div class="de_count wow fadeInRight" data-wow-delay=".2s">
-                                    <h3 class="fs-40 mb-0"><span>23160</span>+</h3>
-                                    Satisfied Patients
-                                </div>
+                            <div class="col-4 wow fadeInUp" data-wow-delay=".7s">
+                                <h3 class="fs-32 mb-0">4.8/5</h3>
+                                <small>Rating Tamu</small>
                             </div>
-                            <div class="col-md-3 col-sm-6 text-center">
-                                <div class="de_count wow fadeInRight" data-wow-delay=".4s">
-                                    <h3 class="fs-40 mb-0"><span>150</span>+</h3>
-                                    Licensed Optometrists
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 text-center">
-                                <div class="de_count wow fadeInRight" data-wow-delay=".6s">
-                                    <h3 class="fs-40 mb-0"><span>20</span>+</h3>
-                                    Years of Expertise
-                                </div>
+                            <div class="col-4 wow fadeInUp" data-wow-delay=".8s">
+                                <h3 class="fs-32 mb-0">24 Jam</h3>
+                                <small>Layanan Resepsionis</small>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="spacer-double"></div>
+
+                {{-- Widget Pencarian --}}
+                <div id="cek-ketersediaan" class="bg-white text-dark p-40 rounded-1 shadow-soft wow fadeInUp">
+                    <div class="row g-3 align-items-end mb-3">
+                        <div class="col-lg-8">
+                            <div class="subtitle s2 mb-2">Cek Ketersediaan</div>
+                            <h3 class="mb-0">Temukan Kamar untuk Tanggal Menginap Anda</h3>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <small class="text-muted"><i class="icofont-clock-time me-1 id-color"></i>Check-in 14.00 ·
+                                Check-out 12.00</small>
+                        </div>
+                    </div>
+                    <form action="{{ url('/rooms') }}" method="GET" class="row g-3">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <label for="check_in_date" class="fw-600 mb-2 d-block fs-14">Check-in</label>
+                            <input type="date" id="check_in_date" name="check_in_date" class="form-control"
+                                min="{{ now()->toDateString() }}" value="{{ now()->toDateString() }}" required>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <label for="check_out_date" class="fw-600 mb-2 d-block fs-14">Check-out</label>
+                            <input type="date" id="check_out_date" name="check_out_date" class="form-control"
+                                min="{{ now()->addDay()->toDateString() }}"
+                                value="{{ now()->addDay()->toDateString() }}" required>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <label for="rooms" class="fw-600 mb-2 d-block fs-14">Jumlah Kamar</label>
+                            <select id="rooms" name="rooms" class="form-control">
+                                @for ($i = 1; $i <= 5; $i++)
+                                    <option value="{{ $i }}">{{ $i }} Kamar</option>
+                                @endfor
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <label for="adults" class="fw-600 mb-2 d-block fs-14">Dewasa</label>
+                            <select id="adults" name="adults" class="form-control">
+                                @for ($i = 1; $i <= 8; $i++)
+                                    <option value="{{ $i }}">{{ $i }} Orang</option>
+                                @endfor
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <label for="children" class="fw-600 mb-2 d-block fs-14">Anak</label>
+                            <select id="children" name="children" class="form-control">
+                                @for ($i = 0; $i <= 6; $i++)
+                                    <option value="{{ $i }}">{{ $i }} Anak</option>
+                                @endfor
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <button type="submit" class="btn-main fx-slide w-100"><span>Cari Kamar</span></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="spacer-double"></div>
+            </div>
 
             <div class="gradient-edge-bottom h-100 color"></div>
             <div class="sw-overlay op-3"></div>
         </section>
 
+        {{-- Highlight Tipe Kamar --}}
+        <section id="kamar" class="relative">
+            <div class="container relative z-2">
+                <div class="row g-4 mb-2 align-items-end">
+                    <div class="col-lg-8">
+                        <div class="subtitle s2 wow fadeInUp mb-2">Tipe Kamar</div>
+                        <h2 class="split" data-wow-delay=".2s">Pilih Kamar Sesuai Kebutuhan Anda</h2>
+                    </div>
+                    <div class="col-lg-4 text-lg-end wow fadeInUp" data-wow-delay=".3s">
+                        <a class="btn-main btn-line fx-slide" href="#cek-ketersediaan"><span>Lihat Semua
+                                Kamar</span></a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
+                        <div class="hover">
+                            <div class="relative overflow-hidden rounded-1">
+                                <a href="#cek-ketersediaan" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-1">
+                                        <img src="{{ asset('landing/images/services/1.webp') }}"
+                                            class="w-100 hover-scale-1-2" alt="Deluxe Room">
+                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
+                                    </div>
+
+                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
+                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
+                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
+                                                class="w-60px p-20" alt="">
+                                        </div>
+                                        <h4>Deluxe Room</h4>
+                                        <p class="mb-2">Kamar nyaman dengan tempat tidur queen, AC, dan pemandangan
+                                            taman.</p>
+                                        <div class="d-flex align-items-center fs-14 text-muted mb-2">
+                                            <span class="me-3"><i class="icofont-user me-1 id-color"></i>2 Tamu</span>
+                                            <span><i class="icofont-expand me-1 id-color"></i>24 m&sup2;</span>
+                                        </div>
+                                        <div class="fw-bold fs-20 id-color">Rp 650.000 <span
+                                                class="fs-14 text-muted fw-normal">/malam</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="hover">
+                            <div class="relative overflow-hidden rounded-1">
+                                <a href="#cek-ketersediaan" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-1">
+                                        <img src="{{ asset('landing/images/services/2.webp') }}"
+                                            class="w-100 hover-scale-1-2" alt="Executive Room">
+                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
+                                    </div>
+
+                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
+                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
+                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
+                                                class="w-60px p-20" alt="">
+                                        </div>
+                                        <h4>Executive Room</h4>
+                                        <p class="mb-2">Ruang lebih luas dengan area kerja, sofa, dan sarapan untuk dua
+                                            orang.</p>
+                                        <div class="d-flex align-items-center fs-14 text-muted mb-2">
+                                            <span class="me-3"><i class="icofont-user me-1 id-color"></i>2 Tamu</span>
+                                            <span><i class="icofont-expand me-1 id-color"></i>32 m&sup2;</span>
+                                        </div>
+                                        <div class="fw-bold fs-20 id-color">Rp 850.000 <span
+                                                class="fs-14 text-muted fw-normal">/malam</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="hover">
+                            <div class="relative overflow-hidden rounded-1">
+                                <a href="#cek-ketersediaan" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-1">
+                                        <img src="{{ asset('landing/images/services/3.webp') }}"
+                                            class="w-100 hover-scale-1-2" alt="Family Suite">
+                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
+                                    </div>
+
+                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
+                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
+                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
+                                                class="w-60px p-20" alt="">
+                                        </div>
+                                        <h4>Family Suite</h4>
+                                        <p class="mb-2">Dua kamar terhubung, ruang keluarga, dan kapasitas hingga empat
+                                            tamu.</p>
+                                        <div class="d-flex align-items-center fs-14 text-muted mb-2">
+                                            <span class="me-3"><i class="icofont-user me-1 id-color"></i>4 Tamu</span>
+                                            <span><i class="icofont-expand me-1 id-color"></i>48 m&sup2;</span>
+                                        </div>
+                                        <div class="fw-bold fs-20 id-color">Rp 1.250.000 <span
+                                                class="fs-14 text-muted fw-normal">/malam</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- Fasilitas Hotel --}}
+        <section id="fasilitas" class="bg-color-op-2 relative text-light">
+            <div class="gradient-edge-top color op-8 h-100"></div>
+            <div class="container relative z-2">
+                <div class="row g-4 mb-2 justify-content-center">
+                    <div class="col-lg-7 text-center">
+                        <div class="uptitle wow fadeInUp">Fasilitas</div>
+                        <h2 class="split" data-wow-delay=".2s">Semua yang Anda Butuhkan untuk Menginap</h2>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2 de-step wow fadeInUp" data-wow-delay="0s">
+                        <div class="de-step-icon bg-white id-color">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Wi-Fi Gratis</h5>
+                        <p class="mb-0 fs-14">Internet cepat di seluruh area hotel.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 de-step wow fadeInUp" data-wow-delay=".1s">
+                        <div class="de-step-icon bg-white id-color">
+                            <i class="fas fa-water-ladder"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Kolam Renang</h5>
+                        <p class="mb-0 fs-14">Kolam outdoor untuk dewasa dan anak.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 de-step wow fadeInUp" data-wow-delay=".2s">
+                        <div class="de-step-icon bg-white id-color">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Restoran</h5>
+                        <p class="mb-0 fs-14">Sarapan dan menu lokal sepanjang hari.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 de-step wow fadeInUp" data-wow-delay=".3s">
+                        <div class="de-step-icon bg-white id-color">
+                            <i class="fas fa-square-parking"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Parkir Luas</h5>
+                        <p class="mb-0 fs-14">Area parkir aman untuk tamu menginap.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 de-step wow fadeInUp" data-wow-delay=".4s">
+                        <div class="de-step-icon bg-white id-color">
+                            <i class="fas fa-bell-concierge"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Resepsionis 24 Jam</h5>
+                        <p class="mb-0 fs-14">Siap membantu kapan pun Anda butuh.</p>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 de-step wow fadeInUp" data-wow-delay=".5s">
+                        <div class="de-step-icon bg-white id-color">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h5 class="fw-bold mb-1">Spa & Relaksasi</h5>
+                        <p class="mb-0 fs-14">Layanan pijat untuk tubuh yang lebih segar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- Keunggulan Memesan Langsung --}}
         <section class="relative">
             <div class="gradient-edge-top color op-3"></div>
             <div class="gradient-edge-bottom color op-3"></div>
             <div class="container relative z-2">
-                <div class="row gy-4 gx-5">
+                <div class="row gy-4 gx-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="me-lg-3">
-                            <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">About Us</div>
-                            <h2 class="split" data-wow-delay=".2s">Professional and Personalized Eye Care Services</h2>
-                            <p class="wow fadeInUp" data-wow-delay=".4s">We provide complete vision care designed for all
-                                ages. From routine eye exams to advanced treatments, our dedicated team ensures your eyes
-                                remain healthy and your vision clear.</p>
+                            <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">Mengapa Memesan Langsung
+                            </div>
+                            <h2 class="split" data-wow-delay=".2s">Harga Terbaik, Konfirmasi Instan, Tanpa Perantara</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">Pemesanan melalui website resmi memberi Anda
+                                akses ke tarif terbaik, ketersediaan kamar yang selalu terbaru, serta layanan resepsionis
+                                yang siap membantu sebelum dan selama menginap.</p>
                             <ul class="ul-check text-dark cols-2 fw-600 mb-4 wow fadeInUp" data-wow-delay=".6s">
-                                <li>Comprehensive Eye Exams</li>
-                                <li>Gentle Care for Kids and Adults</li>
-                                <li>Latest Diagnostic Technology</li>
-                                <li>Flexible Appointment Scheduling</li>
+                                <li>Harga resmi langsung dari hotel</li>
+                                <li>Konfirmasi pemesanan lebih cepat</li>
+                                <li>Pembayaran aman via VA, QRIS, atau transfer</li>
+                                <li>Bisa ajukan reschedule maksimal 1x</li>
                             </ul>
-                            <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s"
-                                href="book-your-visit.html"><span>Book Your Visit</span></a>
+                            <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s" href="#cek-ketersediaan"><span>Pesan
+                                    Sekarang</span></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="relative">
                             <div class="rounded-1 w-90 overflow-hidden wow zoomIn">
                                 <img src="{{ asset('landing/images/misc/l1.webp') }}" class="w-100 wow scaleIn"
-                                    alt="">
+                                    alt="Suasana kamar">
                             </div>
                             <div class="rounded-1 w-50 abs mb-min-50 end-0 bottom-0 z-2 overflow-hidden shadow-soft wow zoomIn"
                                 data-wow-delay=".2s">
                                 <img src="{{ asset('landing/images/misc/s1.webp') }}" class="w-100 wow scaleIn"
-                                    data-wow-delay=".2s" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer-double"></div>
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <h3 class="mb-0">Our Expertise</h3>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0s">
-                        <div class="skill-bar style-2">
-                            <h5>Comprehensive Eye Exams</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="95%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="skill-bar style-2">
-                            <h5>Vision Correction & Glasses</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="skill-bar style-2">
-                            <h5>Contact Lens Fitting</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="skill-bar style-2">
-                            <h5>Pediatric Eye Care</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="skill-bar style-2">
-                            <h5>Dry Eye Treatment</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="1s">
-                        <div class="skill-bar style-2">
-                            <h5>Advanced Diagnostic Technology</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="92%"></div>
+                                    data-wow-delay=".2s" alt="Detail kamar">
                             </div>
                         </div>
                     </div>
@@ -181,15 +313,15 @@
             </div>
         </section>
 
-        <section class="bg-color-op-2 relative">
+        {{-- Ulasan Tamu --}}
+        <section id="ulasan" class="bg-color-op-2 relative">
             <div class="gradient-edge-top color op-8 h-100"></div>
             <div class="container relative z-2">
                 <div class="row mb-3 g-4 align-items-center justify-content-between">
                     <div class="col-lg-6 text-light">
-                        <div class="uptitle wow fadeInUp">Testimonials</div>
-                        <h2 class="split">What Our Patients Are Saying</h2>
-                        <p>From comprehensive eye exams to advanced treatments, our clinic is dedicated to helping patients
-                            achieve clear, healthy vision with compassionate care.</p>
+                        <div class="uptitle wow fadeInUp">Ulasan Tamu</div>
+                        <h2 class="split">Cerita Tamu yang Menginap Bersama Kami</h2>
+                        <p>Kepuasan tamu adalah prioritas kami. Berikut sebagian pengalaman mereka selama menginap.</p>
                     </div>
                     <div class="col-lg-6">
                         <div class="relative">
@@ -210,9 +342,8 @@
                                     <div class="bg-white relative rounded-1 p-40">
                                         <i class="fs-32 icofont-quote-left absolute start-40px id-color"></i>
                                         <div class="ps-5">
-                                            <p>"The optometrist was very patient and explained my results in detail. I
-                                                finally found the right prescription, and my new glasses have completely
-                                                improved my daily life."</p>
+                                            <p>"Proses pemesanan sangat mudah dan konfirmasinya cepat. Kamar bersih,
+                                                sarapan enak, dan staf resepsionis ramah saat kami tiba lebih awal."</p>
                                             <div class="de-rating-ext mb-2">
                                                 <span class="d-stars">
                                                     <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -227,8 +358,8 @@
                                         <img class="w-50px circle me-3" alt=""
                                             src="{{ asset('landing/images/testimonial/1.webp') }}">
                                         <div class="mt-2">
-                                            <div class="text-dark fw-bold lh-1">Emily Johnson</div>
-                                            <small>15 March 2025</small>
+                                            <div class="text-dark fw-bold lh-1">Budi Santoso</div>
+                                            <small>12 Maret 2026</small>
                                         </div>
                                     </div>
                                 </div>
@@ -236,9 +367,8 @@
                                     <div class="bg-white relative rounded-1 p-40">
                                         <i class="fs-32 icofont-quote-left absolute start-40px id-color"></i>
                                         <div class="ps-5">
-                                            <p>"I brought my son for an eye exam and the staff made him feel so relaxed. The
-                                                doctor was gentle, caring, and gave us a clear plan to support his vision
-                                                needs at school."</p>
+                                            <p>"Kami memesan untuk liburan keluarga dan mendapat kamar yang luas. Anak-anak
+                                                senang dengan kolam renang, sementara kami menikmati suasana yang tenang."</p>
                                             <div class="de-rating-ext mb-2">
                                                 <span class="d-stars">
                                                     <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -253,8 +383,8 @@
                                         <img class="w-50px circle me-3" alt=""
                                             src="{{ asset('landing/images/testimonial/2.webp') }}">
                                         <div class="mt-2">
-                                            <div class="text-dark fw-bold lh-1">Michael Lee</div>
-                                            <small>2 February 2025</small>
+                                            <div class="text-dark fw-bold lh-1">Siti Rahma</div>
+                                            <small>28 Februari 2026</small>
                                         </div>
                                     </div>
                                 </div>
@@ -262,9 +392,8 @@
                                     <div class="bg-white relative rounded-1 p-40">
                                         <i class="fs-32 icofont-quote-left absolute start-40px id-color"></i>
                                         <div class="ps-5">
-                                            <p>"I struggled with dry eyes for years, but their treatment plan brought real
-                                                relief. The clinic followed up regularly and ensured my eyes stayed
-                                                comfortable and healthy."</p>
+                                            <p>"Lokasi strategis dan kamar sesuai foto. Pembayaran lewat virtual account
+                                                langsung terkonfirmasi, jadi tidak perlu menunggu lama saat check-in."</p>
                                             <div class="de-rating-ext mb-2">
                                                 <span class="d-stars">
                                                     <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -279,8 +408,8 @@
                                         <img class="w-50px circle me-3" alt=""
                                             src="{{ asset('landing/images/testimonial/3.webp') }}">
                                         <div class="mt-2">
-                                            <div class="text-dark fw-bold lh-1">Sophia Martinez</div>
-                                            <small>20 January 2025</small>
+                                            <div class="text-dark fw-bold lh-1">Andi Pratama</div>
+                                            <small>20 Januari 2026</small>
                                         </div>
                                     </div>
                                 </div>
@@ -288,9 +417,8 @@
                                     <div class="bg-white relative rounded-1 p-40">
                                         <i class="fs-32 icofont-quote-left absolute start-40px id-color"></i>
                                         <div class="ps-5">
-                                            <p>"The diagnostic equipment was modern and very accurate. The doctors explained
-                                                everything clearly and gave me confidence in my eye health and ongoing
-                                                treatment plan."</p>
+                                            <p>"Pelayanan resepsionis 24 jam sangat membantu karena kami tiba malam hari.
+                                                Kamar nyaman dan sarapannya lengkap. Pasti akan menginap lagi."</p>
                                             <div class="de-rating-ext mb-2">
                                                 <span class="d-stars">
                                                     <i class="fa fa-star"></i><i class="fa fa-star"></i>
@@ -305,8 +433,8 @@
                                         <img class="w-50px circle me-3" alt=""
                                             src="{{ asset('landing/images/testimonial/4.webp') }}">
                                         <div class="mt-2">
-                                            <div class="text-dark fw-bold lh-1">David Wilson</div>
-                                            <small>8 December 2024</small>
+                                            <div class="text-dark fw-bold lh-1">Maya Lestari</div>
+                                            <small>8 Desember 2025</small>
                                         </div>
                                     </div>
                                 </div>
@@ -317,330 +445,22 @@
             </div>
         </section>
 
-
-        <section class="relative">
-            <div class="container relative z-2">
-                <div class="row g-4 mb-2 justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="subtitle s2 wow fadeInUp mb-2">Our Services</div>
-                        <h2 class="split" data-wow-delay=".2s">Comprehensive Eye Care & Optometry</h2>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
-                        <div class="hover">
-                            <div class="relative overflow-hidden rounded-1">
-                                <a href="service-single.html" class="d-block hover">
-                                    <div class="relative overflow-hidden rounded-1">
-                                        <img src="{{ asset('landing/images/services/1.webp') }}"
-                                            class="w-100 hover-scale-1-2" alt="">
-                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
-                                    </div>
-
-                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
-                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
-                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
-                                                class="w-60px p-20" alt="">
-                                        </div>
-                                        <h4>Comprehensive Eye Exams</h4>
-                                        <p class="mb-0">Full vision check, refraction, and early detection of eye
-                                            diseases.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="hover">
-                            <div class="relative overflow-hidden rounded-1">
-                                <a href="service-single.html" class="d-block hover">
-                                    <div class="relative overflow-hidden rounded-1">
-                                        <img src="{{ asset('landing/images/services/2.webp') }}"
-                                            class="w-100 hover-scale-1-2" alt="">
-                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
-                                    </div>
-
-                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
-                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
-                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
-                                                class="w-60px p-20" alt="">
-                                        </div>
-                                        <h4>Glasses & Contact Lenses</h4>
-                                        <p class="mb-0">Prescription glasses, contact lens fitting, and digital eye
-                                            strain solutions.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="hover">
-                            <div class="relative overflow-hidden rounded-1">
-                                <a href="service-single.html" class="d-block hover">
-                                    <div class="relative overflow-hidden rounded-1">
-                                        <img src="{{ asset('landing/images/services/3.webp') }}"
-                                            class="w-100 hover-scale-1-2" alt="">
-                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
-                                    </div>
-
-                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
-                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
-                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
-                                                class="w-60px p-20" alt="">
-                                        </div>
-                                        <h4>Pediatric Eye Care</h4>
-                                        <p class="mb-0">Myopia control, lazy eye treatment, and strabismus correction for
-                                            children.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="hover">
-                            <div class="relative overflow-hidden rounded-1">
-                                <a href="service-single.html" class="d-block hover">
-                                    <div class="relative overflow-hidden rounded-1">
-                                        <img src="{{ asset('landing/images/services/4.webp') }}"
-                                            class="w-100 hover-scale-1-2" alt="">
-                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
-                                    </div>
-
-                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
-                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
-                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
-                                                class="w-60px p-20" alt="">
-                                        </div>
-                                        <h4>Cataract Surgery</h4>
-                                        <p class="mb-0">Standard removal, premium intraocular lens, and laser-assisted
-                                            surgery.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="hover">
-                            <div class="relative overflow-hidden rounded-1">
-                                <a href="service-single.html" class="d-block hover">
-                                    <div class="relative overflow-hidden rounded-1">
-                                        <img src="{{ asset('landing/images/services/5.webp') }}"
-                                            class="w-100 hover-scale-1-2" alt="">
-                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
-                                    </div>
-
-                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
-                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
-                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
-                                                class="w-60px p-20" alt="">
-                                        </div>
-                                        <h4>Refractive Surgery</h4>
-                                        <p class="mb-0">LASIK, PRK, and SMILE for permanent correction of vision
-                                            problems.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="1s">
-                        <div class="hover">
-                            <div class="relative overflow-hidden rounded-1">
-                                <a href="service-single.html" class="d-block hover">
-                                    <div class="relative overflow-hidden rounded-1">
-                                        <img src="{{ asset('landing/images/services/6.webp') }}"
-                                            class="w-100 hover-scale-1-2" alt="">
-                                        <div class="gradient-edge-bottom color h-90 op-8"></div>
-                                    </div>
-
-                                    <div class="p-4 relative bg-white rounded-1 mx-4 mt-min-100 z-2">
-                                        <div class="abs top-0 end-0 mt-min-30 me-4 circle bg-color w-60px h-60px">
-                                            <img src="{{ asset('landing/images/misc/up-right-arrow.webp') }}"
-                                                class="w-60px p-20" alt="">
-                                        </div>
-                                        <h4>Glaucoma Care</h4>
-                                        <p class="mb-0">Screening, monitoring eye pressure, laser therapy, and surgery.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="relative jarallax text-light">
-            <div class="gradient-edge-bottom color h-100"></div>
-            <img src="{{ asset('landing/images/background/2.webp') }}" class="jarallax-img" alt="Eye Clinic Process">
-            <div class="sw-overlay op-4"></div>
-            <div class="container relative z-2">
-                <div class="row g-4">
-                    <div class="col-lg-6 offset-lg-3 text-center">
-                        <div class="subtitle wow fadeInUp">Our Process</div>
-                        <h2 class="split" data-wow-delay=".2s">Clear Steps to Better Vision</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md-3 de-step de-step-arrow wow fadeInUp" data-wow-delay="0s">
-                        <div class="de-step-icon bg-white id-color">
-                            <i class="fas fa-calendar-check fa-2x"></i>
-                        </div>
-                        <h4 class="fw-bold">Book Appointment</h4>
-                        <p>Book your appointment online or by phone with our friendly staff.</p>
-                    </div>
-
-                    <div class="col-6 col-md-3 de-step de-step-arrow wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="de-step-icon bg-white id-color">
-                            <i class="fas fa-eye fa-2x"></i>
-                        </div>
-                        <h4 class="fw-bold">Eye Examination</h4>
-                        <p>Receive a comprehensive eye exam with state-of-the-art diagnostics.</p>
-                    </div>
-
-                    <div class="col-6 col-md-3 de-step de-step-arrow wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="de-step-icon bg-white id-color">
-                            <i class="fas fa-glasses fa-2x"></i>
-                        </div>
-                        <h4 class="fw-bold">Personalized Solutions</h4>
-                        <p>Get personalized recommendations for glasses, contacts, or treatment.</p>
-                    </div>
-
-                    <div class="col-6 col-md-3 de-step wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="de-step-icon bg-white id-color">
-                            <i class="fas fa-heartbeat fa-2x"></i>
-                        </div>
-                        <h4 class="fw-bold">Ongoing Care</h4>
-                        <p>Enjoy clearer vision and ongoing care with regular follow-ups.</p>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="subtitle id-color">FAQ</div>
-                        <h2 class="split">
-                            Everything You Should Know About Eye Care
-                        </h2>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="de-tab">
-                            <ul class="d-tab-nav mb-4">
-                                <li class="active-tab">Appointments & Exams</li>
-                                <li>Treatments & Procedures</li>
-                            </ul>
-                            <ul class="d-tab-content">
-                                <li>
-                                    <div class="accordion">
-                                        <div class="accordion-section">
-                                            <div class="accordion-section-title" data-tab="#accordion-a1">
-                                                How do I book an appointment?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-a1">
-                                                You can book online through our website or call our reception desk. Same-day
-                                                emergency appointments may be available.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-a2">
-                                                Do I need a referral to see an optometrist?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-a2">
-                                                No referral is needed for routine eye exams. For specialized care, a
-                                                referral from your doctor may be required.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-a3">
-                                                How often should I have my eyes checked?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-a3">
-                                                Adults should schedule an eye exam every 1–2 years, while children and
-                                                seniors may require more frequent visits.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-a4">
-                                                How long does an eye exam take?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-a4">
-                                                A comprehensive eye exam usually takes 30–45 minutes, depending on the tests
-                                                performed.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-a5">
-                                                What should I bring to my appointment?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-a5">
-                                                Please bring your ID, insurance card, current glasses or contact lenses, and
-                                                a list of any medications you are taking.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="accordion">
-                                        <div class="accordion-section">
-                                            <div class="accordion-section-title" data-tab="#accordion-b1">
-                                                Do you provide laser eye surgery?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-b1">
-                                                Yes, we offer LASIK consultations and work with trusted surgeons for
-                                                corrective eye surgery options.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-b2">
-                                                What treatments are available for dry eyes?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-b2">
-                                                We provide artificial tears, prescription medications, and advanced
-                                                therapies such as punctal plugs.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-b3">
-                                                Can I get prescription glasses on the same day?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-b3">
-                                                In many cases, yes. We have an in-house optical lab that allows for same-day
-                                                or next-day glasses service.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-b4">
-                                                Do you treat eye diseases like glaucoma or cataracts?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-b4">
-                                                Yes, our clinic diagnoses and manages glaucoma, cataracts, macular
-                                                degeneration, and other eye conditions.
-                                            </div>
-                                            <div class="accordion-section-title" data-tab="#accordion-b5">
-                                                Are contact lenses safe for children?
-                                            </div>
-                                            <div class="accordion-section-content" id="accordion-b5">
-                                                Yes, with proper care and hygiene, contact lenses are safe for children as
-                                                young as 10–12 years old.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        {{-- CTA Promo --}}
         <section class="bg-color relative text-light pt-50 pb-50">
             <div class="container relative z-2">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-9">
-                        <h3 class="mb-0 fs-32 split">Clear Vision Starts Here. Schedule Your Eye Exam Today</h3>
+                        <div class="uptitle">Promo Spesial</div>
+                        <h3 class="mb-2 fs-32 split">Pesan Langsung dan Hemat dengan Kode STAYCATION10</h3>
+                        <p class="mb-0">Dapatkan diskon 10% untuk pemesanan langsung melalui website. Berlaku untuk semua
+                            tipe kamar selama periode promo, kuota terbatas.</p>
                     </div>
                     <div class="col-lg-3 text-lg-end">
-                        <a class="btn-main btn-line fx-slide" href="book-your-visit.html"><span>Book Your Visit</span></a>
+                        <a class="btn-main btn-line fx-slide" href="#cek-ketersediaan"><span>Pesan Sekarang</span></a>
                     </div>
                 </div>
             </div>
         </section>
-
 
     </main>
 @endsection
